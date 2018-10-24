@@ -1,0 +1,24 @@
+version: 2
+
+jobs:
+  test_build:
+    macos:
+      xcode: "9.4.1"
+    steps:
+      - checkout
+      - run: git config --global user.email circleci@circleci.com
+      - run: git config --global user.name CircleCI
+      - restore_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+      - run: bundle check || bundle install --path vendor/bundle
+      - save_cache:
+          key: 1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run: bundle exec fastlane test_build
+
+workflows:
+  version: 2
+  general:
+    jobs:
+      - test_build
