@@ -1,0 +1,10 @@
+os: osx
+language: swift
+osx_image: xcode10
+
+before_install:
+  - rvm install ruby-2.5.1
+  - gem install bundler
+  - bundle install
+script:
+  - bundle exec fastlane test_build
