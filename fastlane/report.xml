@@ -5,12 +5,12 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.005255">
+      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.008651">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: xcodebuild" time="5.323872">
+      <testcase classname="fastlane.lanes" name="1: xcodebuild" time="6.076325">
         
       </testcase>
     
