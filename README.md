@@ -1,6 +1,6 @@
 # Metropolia Mobile Project CI example
 
-![Build Status](https://travis-ci.com/NSArtem/MTRPL-CI.svg?branch=master)](https://travis-ci.com/NSArtem/MTRPL-CI)
+[![Build Status](https://travis-ci.com/NSArtem/MTRPL-CI.svg?branch=master)](https://travis-ci.com/NSArtem/MTRPL-CI)
 
 fastlane documentation
 ================
